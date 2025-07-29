@@ -78,23 +78,3 @@
     flex-wrap: wrap;
     width: 60%;
 }
-.card-servico-pagina{
-    height: 280px;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    
-}
-.figure-pagina-servico{
-    display: flex;
-
-}
-.figcaption-servico-pagina{
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(-50%);
-}

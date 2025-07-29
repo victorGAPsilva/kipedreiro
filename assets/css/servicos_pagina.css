@@ -1,0 +1,36 @@
+.servicos-pagina{
+    margin:  40px auto;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.2s;
+}
+.servicos-pagina:hover{
+    background-color: black;
+}
+.container-servicos-pagina{
+    border: 2px solid white;
+}
+.servicos-pagina .hero{
+    width: 100%;
+}
+.cards-servico-pagina{
+    display: flex;
+    flex-wrap: wrap;   
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px;
+}
+.card-servico-pagina-vertical{
+    border: solid 2px white;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.card-servico-pagina{
+    width: 450px;
+    height: 250px;
+    border: 2px solid white;
+}
