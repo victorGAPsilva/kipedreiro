@@ -4,6 +4,106 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 30px;
     color: white;
+    padding: 0px 0px 30px 0px;
+}
+
+
+.testemunhos_hero{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bricklaying-construction-worker-building-brick-wall.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}	
+
+.conteudo_hero_testemunhos{
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    background: white;
+    bottom: 100px;
+    right: 200px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0);
+}
+
+
+.box-testemunho {
+    position: absolute;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+  
+.botoes_slides_esquerdo{
+    height: 100px;
+    position: absolute;
+    z-index: 3;
+
+    bottom: 100px;
+    left: 0;
+}
+.botoes_slides_direita{
+    height: 100px;
+    position: absolute;
+    z-index: 3;
+    bottom: 100px;
+    right: 0;
+}
+
+
+.testemunho-comentarios{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 80px;
+    right: 20px;
+}
+
+.comentario {
+    font-size: 18px;
+    font-style: italic;
+    color: #ddd;
+    margin-bottom: 15px;
+  }
+
+  .autor {
+    font-weight: bold;
+    font-size: 16px;
+    color: yellow;
+    margin-bottom: 10px;
+  }
+
+  .avaliacao {
+    font-size: 20px;
+    color: gold;
+  }
+
+  
+.testemunho-controles button {
+    background-color: gray;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+.testemunho-controles button:hover {
+    background-color: yellow;
 }
