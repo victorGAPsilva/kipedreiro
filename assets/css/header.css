@@ -36,3 +36,12 @@ header{
 .logo{
     width: 200px;
 }
+header a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0,3;
+}
+header a:hover{
+  text-shadow: gray 1px 0px 2px 3px;
+  transform: scale(1.1);
+}

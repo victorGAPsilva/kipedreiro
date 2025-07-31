@@ -24,7 +24,7 @@
     padding: 80px;
 }
 .card-servico-pagina-vertical{
-    border: solid 2px white;
+    box-shadow: rgb(163, 163, 163) 0px 2px 15px;
     width: 300px;
     height: 300px;
     border-radius: 5px;
@@ -33,4 +33,11 @@
     width: 450px;
     height: 250px;
     border: 2px solid white;
+    object-fit: cover;
+}
+.img-card-servico-pagina-vertical{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
 }
