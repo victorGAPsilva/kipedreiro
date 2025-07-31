@@ -26,20 +26,20 @@ export function card_servico() {
             imagem: "assets/img/gestao.jpg",
         }
     ];
-    for (const item of servico_lista) {
+    for (const item_servico of servico_lista) {
         const card_servico = document.createElement("div");
         card_servico.className = "card-servico"
         card_servico.innerHTML = `
         <article>
         <figure>
-            <img src="${item.imagem}" alt="${item.alt_imagem}" class="servico-imagem" />
+            <img src="${item_servico.imagem}" alt="${item_servico.alt_imagem}" class="servico-imagem" />
             <figcaption class="figcaption-servico">
-                <h3 class="titulo-interno">${item.titulo}</h3>
-                <p>${item.descricao}</p>
+                <h3 class="titulo-interno">${item_servico.titulo}</h3>
+                <p>${item_servico.descricao}</p>
             </figcaption>
         </figure>
         </article>
-        `;
+        `
         container_servico.appendChild(card_servico);
     }
 }
