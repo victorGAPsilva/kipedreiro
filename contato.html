@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">Nome</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Sobrenome</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Municipios</label>
+          <select id="country" name="country">
+            <option value="sp">Sao Paulo</option>
+            <option value="sb">São Bernardor dos Campos</option>
+            <option value="gu">Guarulhos</option>
+          </select>
+      
+          <label for="subject">Assuntos</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+</html>
