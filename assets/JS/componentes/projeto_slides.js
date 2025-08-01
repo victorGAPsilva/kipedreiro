@@ -1,33 +1,36 @@
 const container_projetos_AntesDepois = document.getElementById("cards_projetos");
-    const cards_projetos = [
-      {
-        tempo1: "Antes",
-        tempo2: "Depois",
-        img: [
-          "assets/img/eletrica.jpg",
-          "assets/img/pintura.jpg"
-        ],
-        img_alt: "Imagem do projeto de reforma elétrica e pintura",
-        subtitulo: "Reforma Residencial",
-        paragrafo: `Projeto realizado em São Paulo, SP. 
-          Nesta obra, realizamos a modernização da rede elétrica para maior segurança e eficiência. 
-          Também executamos pintura completa das paredes internas com tintas de alta durabilidade. 
-          Trabalho finalizado em 3 meses, garantindo qualidade e satisfação do cliente.`
-      },
-      {
-        tempo1: "Antes",
-        tempo2: "Depois",
-        img: [
-          "assets/img/eletrica.jpg",
-          "assets/img/pintura.jpg"
-        ],
-        img_alt: "Imagem do projeto de reforma elétrica e pintura",
-        subtitulo: "Reforma Comercial",
-        paragrafo: `Localizado em Belo Horizonte, MG, este projeto envolveu a atualização do sistema elétrico 
-          para suportar equipamentos modernos e a renovação da pintura externa, 
-          aumentando a vida útil da fachada e a atratividade do local. 
-          Projeto concluído em 2 meses com todos os padrões de segurança atendidos.`
-      }    
+
+const cards_projetos = [
+  {
+    tempo1: "Antes",
+    tempo2: "Depois",
+    imgAntes: [
+      "assets/img/eletrica.jpg",
+      "assets/img/pintura.jpg"
+    ],
+    imgDepois: [
+      "assets/img/eletrica.jpg",
+      "assets/img/pintura.jpg"
+    ],
+    img_alt: "Imagem do projeto",
+    subtitulo: "Projeto 1",
+    paragrafo: "Descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, velit voluptas."
+  },
+  {
+    tempo1: "Antes",
+    tempo2: "Depois",
+    imgAntes: [
+      "assets/img/eletrica.jpg",
+      "assets/img/pintura.jpg"
+    ],
+    imgDepois: [
+      "assets/img/eletrica.jpg",
+      "assets/img/pintura.jpg"
+    ],
+    img_alt: "Imagem do projeto",
+    subtitulo: "Projeto 2",
+    paragrafo: "Outra descrição do projeto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, velit voluptas."
+  }
 ];
 
 function criarCarrossel(imagens, altBase, idUnico) {
@@ -54,22 +57,25 @@ for (const item of cards_projetos) {
   const card = document.createElement("div");
   card.className = "card_projetos";
   card.innerHTML = `
+    <h3>${item.tempo1}</h3>
     <article>
       <figure>
-        ${criarCarrossel(item.img, item.img_alt, idSlide + "-antes")}
+        ${criarCarrossel(item.imgAntes, item.img_alt, idSlide + "-antes")}
       </figure>
       <div class="container_texto_projeto">
         <h4>${item.subtitulo}</h4>
         <p>${item.paragrafo}</p>
       </div>
     </article>
+
+    <h3>${item.tempo2}</h3>
     <article>
       <div class="container_texto_projeto">
         <h4>${item.subtitulo}</h4>
         <p>${item.paragrafo}</p>
       </div>
       <figure>
-        ${criarCarrossel(item.img, item.img_alt, idSlide + "-depois")}
+        ${criarCarrossel(item.imgDepois, item.img_alt, idSlide + "-depois")}
       </figure>
     </article>
   `;
