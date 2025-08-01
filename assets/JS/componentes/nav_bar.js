@@ -8,7 +8,7 @@ export function nav_bar() {
         </div>
 
         <nav class="menu-primario">
-            <img src="assets/img/logo/KiPedreiro.png" alt="Kipedreiro logo" class="logo">
+            <a href="index.html"><img src="assets/img/logo/KiPedreiro.png" alt="Kipedreiro logo" class="logo"><a>
             <ul class="menu-navegacao">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
