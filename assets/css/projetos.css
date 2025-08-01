@@ -42,27 +42,23 @@
 
 .figcaption-projeto {
     position: absolute;
-    bottom: 0;
+    bottom: -100%; 
     left: 0;
     width: 100%;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
     padding: 10px;
-    transform: translateY(100%);
-    transition: all 0.5s;
+    text-align: center;
+    transition: bottom 0.9s ease;
+    text-align: center;
+    justify-content: center;
 
 }
 
 .card-projeto:hover .figcaption-projeto {
-    transform: translateY(0);
-    background: linear-gradient(to top, black, transparent);
-    backdrop-filter: blur(1px);
+    bottom: 0;
+    backdrop-filter: blur(5px);
 }
 
 
