@@ -15,7 +15,7 @@ export function nav_bar() {
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="processos.html">Processos</a></li>
                 <li><a href="#testemunhos">Testemunhos</a></li>
-                <li><a href="contato">contato</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>`
 }
