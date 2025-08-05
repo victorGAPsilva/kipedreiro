@@ -3,9 +3,7 @@ export function footer() {
     footer.innerHTML = ` <div class="container">
             <div class="coluna-footer">
                 <h3>sobre nos</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli</p>
+                 <p>A Ki-Pedreiro é uma construtora de São Paulo que realiza reformas e obras com qualidade, agilidade e preço justo. Contamos com uma equipe experiente para transformar seu projeto em realidade.</p>
             </div>
             <div class="coluna-footer">
                 <h3>links uteis</h3>
