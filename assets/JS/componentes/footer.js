@@ -14,7 +14,6 @@ export function footer() {
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#processos">Processos</a></li>
-                    <li><a href="#testemunhos">Testemunhos</a></li>
                     <li><a href="contato">contato</a></li>
                 </ul>
             </div>

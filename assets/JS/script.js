@@ -6,7 +6,6 @@ import {card_processos} from './componentes/card_processos.js'
 import {testemunho_slides} from './componentes/testemunho_slides.js'
 
 
-
 nav_bar()
 footer()
 card_servico()

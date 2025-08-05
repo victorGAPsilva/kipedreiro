@@ -13,9 +13,8 @@ export function nav_bar() {
                 <li><a href="index.html">Início</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="#processos">Processos</a></li>
-                <li><a href="#testemunhos">Testemunhos</a></li>
-                <li><a href="contato.html">contato</a></li>
+                <li><a href="processos.html">Processos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>`
 }

@@ -3,28 +3,28 @@ export function card_projetos() {
     const container_projetos = document.getElementById("cards-projeto")
     const projetos_lista = [
         {
-            titulo: "Projeto 1",
-            descricao: "Descrição do projeto 1.",
+            titulo: "Reforma da Biblioteca Municipal - Av. Brasil, 1020",
+            descricao: "Projeto de revitalização da Biblioteca Municipal com melhorias na estrutura, acessibilidade e iluminação para melhor atender a comunidade.",
             alt_imagem: "Projeto 1",
-            imagem: "assets/img/a-d.jpg",
+            imagem: "assets/img/biblioteca.jpg",
         },
         {
-            titulo: "Projeto 2",
-            descricao: "Descrição do projeto 2.",
+            titulo: "Modernização do Salão de Beleza Estilo Vip - Rua das Rosas, 58",
+            descricao: "Reforma completa do salão de beleza, com troca de revestimentos, instalação de mobiliário planejado e renovação da fachada para valorizar o ambiente.",
             alt_imagem: "Projeto 2",
-            imagem: "assets/img/a-d2.jpg",
+            imagem: "assets/img/salaodebeleza.jpg",
         },
         {
-            titulo: "Projeto 3",
-            descricao: "Descrição do projeto 3.",
-            alt_imagem: "Projeto 3",
-            imagem: "assets/img/a-d3.jpg",
+            titulo: "Transformação da Loja de Roupas Bella Moda - Rua das Acácias, 240",
+            descricao: "Obra de reforma e decoração da loja Bella Moda, com instalação de vitrines modernas, araras personalizadas e iluminação decorativa para destacar os produtos femininos.",
+            alt_imagem: "Transformação da Loja de Roupas Bella Moda - Rua das Acácias, 240",
+            imagem: "assets/img/lojaderoupas.jpg",
         },
         {
-            titulo: "Projeto 4",
-            descricao: "Descrição do projeto 4.",
-            alt_imagem: "Projeto 4",
-            imagem: "assets/img/a-d4.jpg",
+            titulo: "Implantação do Consultório Odontológico Sorriso+ - Av. João Paulo, 765",
+            descricao: "Projeto de implantação de consultório odontológico com ambientes climatizados, divisórias de vidro, recepção moderna e estrutura adaptada para atender pacientes com conforto e segurança.",
+            alt_imagem: "Implantação do Consultório Odontológico Sorriso+ - Av. João Paulo, 765",
+            imagem: "assets/img/dentista.jpg",
         }
     ]
     for (const item_projetos of projetos_lista) {

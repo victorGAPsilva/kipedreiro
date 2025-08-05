@@ -1,5 +1,5 @@
 .servicos-pagina{
-    margin:  40px auto;
+    margin:  0 auto;
     background-color: rgb(54, 54, 54);
     color: white;
     align-items: center;
@@ -8,9 +8,6 @@
 }
 .servicos-pagina:hover{
     background-color: rgba(44, 44, 44, 0.829);
-}
-.container-servicos-pagina{
-    border: 2px solid white;
 }
 .servicos-pagina .hero{
     width: 100%;
