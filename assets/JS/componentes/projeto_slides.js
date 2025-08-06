@@ -51,7 +51,6 @@ const cards_projetos = [
   },
   {
     imagens: [
-      
       "assets/img/dentista.jpg",
       "assets/img/Projetos/odontologico/dowload1.jpg",
       "assets/img/Projetos/odontologico/dowload2.jpg",
@@ -59,7 +58,6 @@ const cards_projetos = [
       "assets/img/Projetos/odontologico/dowload4.jpg",
       "assets/img/Projetos/odontologico/dowload5.jpg",
       "assets/img/Projetos/odontologico/dowload6.jpg",
-      
     ],
     img_alt: "Imagens do Consultório Odontológico",
     subtitulo: "Implantação do Consultório Odontológico Sorriso+ - Av. João Paulo, 765",
@@ -68,11 +66,17 @@ const cards_projetos = [
 ];
 
 function criarCarrossel(imagens, altBase, idUnico) {
-  let slidesHTML = imagens.map((src, idx) => `
-    <div class="slide slide-${idUnico}" style="${idx === 0 ? "display:block;" : "display:none;"}">
-      <img src="${src}" alt="${altBase}" class="imagem_projeto" />
-    </div>
-  `).join("");
+  let slidesHTML = "";
+
+  for (let i = 0; i < imagens.length; i++) {
+    const src = imagens[i];
+    const style = i === 0 ? "display:block;" : "display:none;";
+    slidesHTML += `
+      <figure class="slide slide-${idUnico}" style="${style}">
+        <img src="${src}" alt="${altBase}" class="imagem_projeto"/>
+      </figure>
+    `;
+  }
 
   return `
     <div class="carrossel">
@@ -85,7 +89,8 @@ function criarCarrossel(imagens, altBase, idUnico) {
 
 let contadorId = 0;
 
-for (const item of cards_projetos) {
+for (let i = 0; i < cards_projetos.length; i++) {
+  const item = cards_projetos[i];
   const idSlide = `carrossel-${contadorId++}`;
 
   const card = document.createElement("div");
@@ -100,16 +105,16 @@ for (const item of cards_projetos) {
         <p>${item.paragrafo}</p>
       </div>
     </article>`;
-  
+
   container_projetos.appendChild(card);
 }
 
 function mudaSlide(n, idGrupo) {
   const slides = document.querySelectorAll(`.slide-${idGrupo}`);
-  let currentIndex = [...slides].findIndex(s => s.style.display === "block");
+  let IndexAtual = [...slides].findIndex(s => s.style.display === "block");
 
-  slides[currentIndex].style.display = "none";
+  slides[IndexAtual].style.display = "none";
 
-  let nextIndex = (currentIndex + n + slides.length) % slides.length;
+  let nextIndex = (IndexAtual + n + slides.length) % slides.length;
   slides[nextIndex].style.display = "block";
 }
