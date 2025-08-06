@@ -2,10 +2,20 @@ export function nav_bar() {
   const header = document.getElementById("header");
 
   header.innerHTML = `
-    <div class="menu-secundario">
-      <span><img src="assets/img/icon/001-phone-receiver-silhouette.png" alt="telefone de contato" class="icon">(11) 92152-4829</span>
-      <span><img src="assets/img/icon/019-email-1.png" alt="email de contato" class="icon">contato@kipedreiro.com</span>
-    </div>
+   <div class="menu-secundario">
+  <a href="tel:+5511921524829">
+    <span>
+      <img src="assets/img/icon/001-phone-receiver-silhouette.png" alt="telefone de contato" class="icon_nav_bar">
+      (11) 92152-4829
+    </span>
+  </a>
+  <a href="mailto:contato@kipedreiro.com">
+    <span>
+      <img src="assets/img/icon/019-email-1.png" alt="email de contato" class="icon_nav_bar">
+      contato@kipedreiro.com
+    </span>
+  </a>
+</div>
 
     <nav class="menu-primario">
       <a href="index.html"><img src="assets/img/logo/KiPedreiro.png" alt="Kipedreiro logo" class="logo"></a>

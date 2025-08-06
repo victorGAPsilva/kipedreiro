@@ -7,11 +7,12 @@
 
 }
 
+
+
 .container-projetos {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .cards-projeto {
@@ -64,16 +65,15 @@
 
 .projetos .titulo {
     color: white;
-    font-size: 24px;
 }
 
 .botao-projetos {
-    position: absolute;
-    left: 45%;
+    display: flex;
     width: 100%;
-    align-items: center;
+    margin: 40px auto;
     justify-content: center;
-    margin: 10px 0px;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .botao-projetos .botao-orcamento {
@@ -158,6 +158,7 @@
     padding: 10px;
     margin: 20px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 
