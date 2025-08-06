@@ -1,39 +1,77 @@
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #000000; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical ; 
-    box-shadow: rgba(66, 66, 66, 0.384) 0px 3px 20px 4px;
-  }
-  
- 
-  input[type=submit] {
-    background-color: #5f5f5f;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.4s;
-    box-shadow: #abaaaa 4px 1px 13px 2px;
-  }
-  
- 
-  input[type=submit]:hover {
-    background-color: #000000;
-    border-radius: 5px;
-    box-shadow: rgba(61, 61, 61, 0.767) 0px 3px 5px 4px;
-  }
-  
+/* ===== FORMULÁRIO DE ORÇAMENTO ===== */
 
+.orcamento {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+}
+
+.container-contato {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container-contato h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Estilo padrão para labels e inputs */
+.container-contato label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+.container-contato input[type="text"],
+.container-contato input[type="email"],
+.container-contato input[type="tel"],
+.container-contato select,
+.container-contato textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.container-contato textarea {
+  resize: vertical;
+}
+
+/* Botão de envio */
+.container-contato input[type="submit"] {
+  background-color: #E58E27;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.container-contato input[type="submit"]:hover {
+  background-color: #cc7a20;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
   .container-contato {
-    margin: 20px auto;
-    border-radius: 5px;
-    background-color: #979797;
-    padding: 80px;
-    color: white;
-    max-width: 1100px;
+    padding: 20px;
   }
+
+  .container-contato h2 {
+    font-size: 22px;
+  }
+}

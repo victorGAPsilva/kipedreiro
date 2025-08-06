@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kipedreiro - Serviços de construção e reforma. Contrate os melhores profissionais para seus projetos.">
+  <meta name="description"
+    content="Kipedreiro - Serviços de construção e reforma. Contrate os melhores profissionais para seus projetos.">
   <meta name="keywords" content="Construção, Reforma, Serviços, Projetos, Profissionais">
   <meta name="author" content="Kipedreiro">
   <meta name="robots" content="index, follow">
   <title>Kipedreiro</title>
   <link rel="stylesheet" href="assets/css/style.css">
-<body>
-  
-</body>
-</html>
-<header id="header">
+</head>
 
-</header>
 <body>
-    <div class="container-contato">
-        <form action="action_page.php">
-      
-          <label for="fname">Nome</label>
-          <input type="text" id="fname" name="firstname" placeholder="Digite seu Nome">
-      
-          <label for="lname">Sobrenome</label>
-          <input type="text" id="lname" name="lastname" placeholder="Digite seu Sobrenome">
-      
-          <label for="country">Municipios</label>
-          <select id="country" name="country">
-            <option value="sp">Sao Paulo</option>
-            <option value="sb">São Bernardor dos Campos</option>
+  <header id="header">
+  </header>
+  <main>
+    <section class="orcamento">
+      <div class="container-contato">
+        <form action="enviar_orcamento.php" method="POST">
+          <h2>Solicite um Orçamento</h2>
+
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+          <label for="municipio">Município</label>
+          <select id="municipio" name="municipio" required>
+            <option value="">Selecione um município</option>
+            <option value="sp">São Paulo</option>
+            <option value="sb">São Bernardo do Campo</option>
             <option value="gu">Guarulhos</option>
           </select>
-      
-          <label for="subject">Assuntos</label>
-          <textarea id="subject" name="subject" placeholder="Escreva Sobre o Assunto Desejado" style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
+
+          <label for="tipo_servico">Tipo de serviço</label>
+          <select id="tipo_servico" name="tipo_servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="pintura">Pintura</option>
+            <option value="alvenaria">Alvenaria</option>
+            <option value="eletrica">Elétrica</option>
+            <option value="estrutura_concreto">Estrutura de Concreto Armado</option>
+            <option value="impermeabilizacao">Impermeabilização</option>
+            <option value="cobertura">Cobertura</option>
+            <option value="revestimento">Revestimento Interno e Externo</option>
+            <option value="hidrossanitaria">Instalações Hidrossanitárias</option>
+            <option value="instalacao_eletrica">Instalações Elétricas</option>
+          </select>
+          <label for="detalhes">Detalhes do projeto</label>
+          <textarea id="detalhes" name="detalhes" placeholder="Descreva sua necessidade, metragem, prazos, etc."
+            style="height:200px" required></textarea>
+          <input type="submit" value="Enviar Orçamento">
         </form>
       </div>
-      
-      <footer id="footer">
-
-      </footer>
-      <script src="assets/JS/script.js" type="module" defer></script>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+  <script src="assets/JS/script.js" type="module" defer></script>
 </body>
 </html>
