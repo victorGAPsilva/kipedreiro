@@ -16,6 +16,7 @@ export function footer() {
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="processos.html">Processos</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="fim.html">Fim</a></li>
         </ul>
       </div>
 
